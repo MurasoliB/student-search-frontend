@@ -8,7 +8,7 @@
     if (!query.trim()) { students = []; filter = {}; return; }
     loading = true;
     try {
-      const res = await fetch('https://student-search-backend.onrender.com/search', {
+      const res = await fetch('https://student-search-backend-ts5r.onrender.com/search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query })
